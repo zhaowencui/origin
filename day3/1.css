@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:14px;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;
+    color:#555;
+}
+ul,li{
+    list-style: none;
+}
+#hotNews{
+    border:1px dashed #555;
+    width:300px;
+    margin:20px auto;
+    padding:20px;
+}
+a,a:hover,a:active{
+    text-decoration: none;
+    color:#555;
+}
+#hotNews li{
+    height:35px;
+    line-height:35px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*css3中提供的结构伪类选择器：nth-child/nth-last-child/nth-of-type/nth-last-of-type*/
+#hotNews li:nth-child(even){
+    background:#999;
+} /*偶数行even 奇数行 odd*/
+#hotNews li:nth-child(3n+1){
+    background:yellow;
+}
+#hotNews li:hover{
+    background: hotpink;
+}
+
+
